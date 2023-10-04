@@ -5,6 +5,11 @@ export const increment = createAction(
   props<{value: number}>() // The shape of the data attached to the action
 );
 
+export const decrement = createAction(
+  '[Counter] Decrement',
+  props<{value: number}>()
+)
+
 // export const INCREMENT = '[Counter] Increment'
 //
 // export class IncrementAction implements Action {
